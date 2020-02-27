@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript-Fase3</h2>
+<p id="demo"></p>
+<script>
+let yearOfBirth = (1984);
+const leapYearReference = (1948);
+let leapYear = " - It's a leap year!";
+let notLeapYear = " - It's not a leap year!";
+let birthDateLeap = " - It's your birthday and it's a leap year!";
+let birthDateNotLeap = " - It's your birthday and it's not a leap year!";
+    for (i = leapYearReference; i < yearOfBirth; i++) {
+    	if (i%4 == 0){
+        	document.write(i + leapYear + "<br >");
+    	}else {
+    		document.write(i + notLeapYear + "<br >");}
+    }
+    for (j = (yearOfBirth); j <= yearOfBirth; j++) {
+        if (j%4 == 0){
+            document.write(j + birthDateLeap + "<br >");
+        }else {
+            document.write(j + birthDateNotLeap + "<br >");}
+    }    
+</script>
+</body>
+</html>

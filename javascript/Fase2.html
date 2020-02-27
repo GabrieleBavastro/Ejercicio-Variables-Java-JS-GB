@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript-Fase2</h2>
+<p id="name"></p>
+<p id="birthDay"></p>
+<p id="leapYear"></p>
+<p id="leapYearN"></p>
+<script>
+let name = "Gabriele";
+let surname1 = "Bavastro";
+let surname2 = "Navone";
+let dayOfBirth = (9);
+let monthOfBirth = (7);
+let yearOfBirth = (1984);
+const leapYearReference = (1948);
+const leapYearloop = (4);
+let fromLyeToYob = (yearOfBirth) - (leapYearReference);
+let leapYearsfromLyeToYob = (fromLyeToYob) / (leapYearloop);
+document.getElementById("name").innerHTML = ("Your name is: " + name + " " + surname1 + " " + surname2+ ".");
+document.getElementById("birthDay").innerHTML = ("Your birthday is: " + dayOfBirth + "/" + monthOfBirth + "/" + yearOfBirth+ ".");
+document.getElementById("leapYear").innerHTML = (leapYearReference + " it's a leap year.");
+document.getElementById("leapYearN").innerHTML = ("The number of Leap Years between your birthday and " + leapYearReference + " is " + leapYearsfromLyeToYob + ".");
+</script>
+</body>
+</html>
